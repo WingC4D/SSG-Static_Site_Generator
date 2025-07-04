@@ -9,7 +9,6 @@ def main():
     
     if len(sys.argv) > 1:
         basepath = sys.argv[1]
-        
         if not basepath.endswith('/'):
             basepath = basepath+'/'
     
@@ -32,7 +31,7 @@ def generate_page(from_path: str, template_path: str, dst_path: str, basepath: s
             r'{{ Title }}', title).replace(
                 r'{{ Content }}',html_str).replace(
                     'href="/', f'href="{basepath}').replace(
-                        'src=/"', f'src="{basepath}')
+                        'src="/', f'src="{basepath}')
         
         wf.write(str(tmp_contents))
 
