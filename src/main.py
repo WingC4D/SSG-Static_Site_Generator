@@ -33,9 +33,8 @@ def generate_page(from_path: str, template_path: str, dst_path: str, basepath: s
             r'{{ Title }}', title).replace(
                 r'{{ Content }}',html_str).replace(
                     'href="/', f'href="{basepath}').replace(
-                        'src="/', f'src="{basepath}').replace(
-                    'href="/', f'href="{basepath}').replace( # Add this line
                         'src="/', f'src="{basepath}')
+
         
         wf.write(str(tmp_contents))
 
