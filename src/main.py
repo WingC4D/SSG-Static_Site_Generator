@@ -4,11 +4,13 @@ from markdown_to_html_node import *
 import sys
 
 def main():
-    basepath ='./'
+    basepath ='/'
     dest_dir = 'docs'
     
     if len(sys.argv) > 1:
         basepath = sys.argv[1]
+        if not basepath.startswith('/'):
+            basepath =  '/'+ basepath
         if not basepath.endswith('/'):
             basepath = basepath+'/'
     
