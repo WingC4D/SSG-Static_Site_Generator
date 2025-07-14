@@ -1,7 +1,7 @@
-### Custom Static Site Generator
-This project is a custom-built Static Site Generator (SSG) developed in Python. It takes Markdown files as input, processes them, and converts them into a complete static website. This project was completed as a guided exercise from the Boot.dev platform and represents my learning experience approximately three months into my coding journey.
+## Custom Static Site Generator
+This project is a custom-built Static Site Generator (SSG) developed in Python. It takes Markdown files as input, processes them, and converts them into a complete static website. This project was completed as a guided exercise from the Boot.dev platform and represents my learning experience, approximately three months into my coding journey.
 
-#### Features
+### Features
 - Markdown to HTML Conversion: Parses Markdown content, including headings, paragraphs, code blocks, quotes, ordered and unordered lists, bold, italic, images, and links, transforming it into valid HTML.
 
 - Templating System: Utilizes an HTML template file (template.html) to inject generated content and page titles, ensuring consistent site structure.
@@ -10,32 +10,35 @@ This project is a custom-built Static Site Generator (SSG) developed in Python. 
 
 - Dynamic Base Path Handling: Automatically adjusts internal links (href and src attributes) based on a provided base path, crucial for correct deployment on sub-directory hosting environments like GitHub Pages.
 
-#### Technologies Used
+### Technologies Used
+<p align="center">
+  <href = "https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,md,bash,html,css,vscode,github,ubuntu" >
+</p>
+
 - Python 3: For all the core logic and scripting.
 
--  Markdown: Input content format.
+- Markdown: Input content format.
 
 - HTML5: Output website format.
 
-- Bash Scripting: For build and run commands.
+- Bash Scripting: For building and running commands.
 
-#### How to Run/Build
-- To generate the static site and run it locally:
-  1. Clone the repository.
-  2 . Build the site:
-     1. This command will generate the static HTML and CSS files in the docs/ directory. Make sure to replace /your-repository-name/ with the actual path your project will be served from (e.g., your GitHub repository name if using GitHub Pages).
-      `./build.sh`
-      2. Example based on typical GitHub Pages setup:
-         ``` bash 
-          python3 src/main.py "/SSG-Static_Site_Generator/"
-         ```
-      3. Serve the site locally:
-        Navigate into the generated docs directory and start a local Python HTTP server.
-        ```Bash
-        cd docs
-        python3 -m http.server 8888
-        ```
-      4. Then, open your web browser and go to http://localhost:8888 to view the generated site.
+### How to Run/Build
+To generate the static site and run it locally:
+- Clone the repository.
+- Build the site:
+  1. This command `./build.sh` will generate the static HTML and CSS files in the docs/ directory. Make sure to replace /your-repository-name/ with the actual path your project will be served from (e.g., your GitHub repository name if using GitHub Pages). 
+  2. Example based on typical GitHub Pages setup:
+     ``` bash 
+     python3 src/main.py "/SSG-Static_Site_Generator/"
+     ```
+  3. Serve the site locally - Navigate into the generated docs directory and start a local Python HTTP server.
+     ``` bash
+     cd docs
+     python3 -m http.server 8888
+     ```
+  4. Then, open your web browser and go to http://localhost:8888 to view the generated site.
 
 Generated Site Example
 The project includes example content for a "Tolkien Fan Club" website.
