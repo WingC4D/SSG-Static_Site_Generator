@@ -1,6 +1,6 @@
 ## Custom Static Site Generator
-This project is a custom-built Static Site Generator (SSG) developed in Python. It takes Markdown files as input, processes them, and converts them into a complete static website. This project was completed as a guided exercise from the Boot.dev platform and represents my learning experience, approximately three months into my coding journey.
-
+- This project is a custom-built Static Site Generator (SSG) developed in Python. It takes Markdown files as input, processes them, and converts them into a complete static website. This project was completed as a guided exercise from the Boot.dev platform and represents my learning experience, approximately three months into my coding journey.
+---
 ### Features
 - Markdown to HTML Conversion: Parses Markdown content, including headings, paragraphs, code blocks, quotes, ordered and unordered lists, bold, italic, images, and links, transforming it into valid HTML.
 
@@ -9,7 +9,7 @@ This project is a custom-built Static Site Generator (SSG) developed in Python. 
 - Content and Static Asset Processing: Copies static files (like CSS and images) and processes Markdown content from designated input directories (static and content) into the output directory (docs).
 
 - Dynamic Base Path Handling: Automatically adjusts internal links (href and src attributes) based on a provided base path, crucial for correct deployment on sub-directory hosting environments like GitHub Pages.
-
+---
 ### Technologies Used
 <p align="center">
   <href = "https://skillicons.dev">
@@ -23,7 +23,7 @@ This project is a custom-built Static Site Generator (SSG) developed in Python. 
 - HTML5: Output website format.
 
 - Bash Scripting: For building and running commands.
-
+---
 ### How to Run/Build
 To generate the static site and run it locally:
 - Clone the repository.
@@ -39,7 +39,7 @@ To generate the static site and run it locally:
      python3 -m http.server 8888
      ```
   4. Then, open your web browser and go to http://localhost:8888 to view the generated site.
-
+---
 Generated Site Example
 The project includes example content for a "Tolkien Fan Club" website.
 
